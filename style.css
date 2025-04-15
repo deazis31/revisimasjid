@@ -1,0 +1,40 @@
+/* Animasi untuk hamburger menu */
+#mobile-menu {
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#mobile-menu.hidden {
+    max-height: 0;
+}
+
+#mobile-menu:not(.hidden) {
+    max-height: 500px;
+}
+
+/* Efek hover untuk tombol */
+button, a {
+    transition: all 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 1rem;
+    }
+    
+    .section {
+        padding: 3rem 1rem;
+    }
+}
+
+/* Style untuk form kontak */
+form input, form textarea {
+    transition: border-color 0.2s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #38a169;
+    box-shadow: 0 0 0 2px rgba(56, 161, 105, 0.2);
+}
